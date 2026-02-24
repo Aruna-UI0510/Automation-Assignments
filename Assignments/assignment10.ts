@@ -50,5 +50,7 @@ function calculateMaxProfit(prices:number[])
 }
 const prices1:number[] = [7,1,5,3,6,4] 
 const prices2:number[] = [7,6,4,3,1] 
+const prices3:number[]=  [5, 2, 6, 1, 4]
 calculateMaxProfit(prices1)
 calculateMaxProfit(prices2)
+calculateMaxProfit(prices3)
