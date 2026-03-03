@@ -19,22 +19,24 @@ function calculate(x:number,n:number)
     
     if(n===0)
     {
-        console.log(result)}
-    if(n<0)
+        result=1
+    }
+    else if(n<0)
     {
         x=1/x
         n=-n
     }
+    
     for(let i=1;i<=n;i++)
     {
-        result+=x*i
+        result*=x
     }
-
+    
     console.log(result)
 
 }
 
 let x:number=2
-let n:number=10
+let n:number=-2
 calculate(x,n)
 
