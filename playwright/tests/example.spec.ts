@@ -1,18 +1,40 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+
+test.describe('group 1',()=>{
+ 
+
+test('test 1 @smoke', async ({ page }) => {
+ 
+   console.log("Test 1")
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('test 2 @smoke', async ({ page }) => {
+ 
+   console.log("Test 2")
 });
+
+})
+
+
+ test.describe('group 2',{tag: "@regression"},()=>{
+
+test('test 3 ', async ({ page }) => {
+ 
+   console.log("Test 3")
+});
+
+test('test 4', async ({ page }) => {
+ 
+   console.log("Test 4")
+});
+test('test 5', async ({ page }) => {
+ 
+   console.log("Test 5")
+});
+})
+
+
+
+
