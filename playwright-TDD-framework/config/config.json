@@ -1,0 +1,33 @@
+{
+    "ui":{
+
+        "url":"https://example.com",
+        "username":"Aruna",
+        "Password":"password"
+    },
+    "api":{
+
+        "baseurl":"https://example.com",
+        "Port":"Aruna",
+        "headers":{
+             "content":"application/json",
+        }
+    },
+    "db":{
+
+        "host":"localhost",
+        "port":"1234.6785.890",
+        "user":"user-name",
+        "password":"user12345"
+    },
+    "ollama":
+    {
+        "user":"test",
+        "password":"1234"
+
+    }
+
+
+
+
+}
