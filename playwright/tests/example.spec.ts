@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 
 
-test.describe('group 1',()=>{
+test.beforeAll('group 1',()=>{
  
 
 test('test 1 @smoke', async ({ page }) => {
